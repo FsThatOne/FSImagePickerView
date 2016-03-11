@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FSImageModel.h"
 
 @interface FSImagePickerView : UICollectionView
-
+@property (nonatomic, strong) NSMutableArray *data;
+@property (nonatomic, weak) UIViewController *controller;
+/**
+ *  标记是否有数据
+ */
+@property (nonatomic, assign, getter=isContent) BOOL content;
 @end

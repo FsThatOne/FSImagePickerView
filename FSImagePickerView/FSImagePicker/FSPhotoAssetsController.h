@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FSPhotoGroupController.h"
 
-@interface FSPhotoAssetsController : UICollectionViewController
+@interface FSPhotoAssetsController : UIViewController
+@property (nonatomic, strong) NSArray *data;
 
+@property (nonatomic, weak) FSPhotoGroupController *groupVc;
 @end

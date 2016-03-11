@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F063831E1C33D41A009BEFAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F063831D1C33D41A009BEFAA /* main.m */; };
+		F06383211C33D41A009BEFAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F06383201C33D41A009BEFAA /* AppDelegate.m */; };
+		F06383241C33D41A009BEFAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06383231C33D41A009BEFAA /* ViewController.m */; };
+		F06383271C33D41A009BEFAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F06383251C33D41A009BEFAA /* Main.storyboard */; };
+		F06383291C33D41A009BEFAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F06383281C33D41A009BEFAA /* Assets.xcassets */; };
+		F063832C1C33D41A009BEFAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F063832A1C33D41A009BEFAA /* LaunchScreen.storyboard */; };
+		F06383371C33D41A009BEFAA /* FSImagePickerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F06383361C33D41A009BEFAA /* FSImagePickerViewTests.m */; };
+		F06383421C33D41A009BEFAA /* FSImagePickerViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F06383411C33D41A009BEFAA /* FSImagePickerViewUITests.m */; };
+		F06383561C33D5F4009BEFAA /* FSImagePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06383551C33D5F4009BEFAA /* FSImagePickerView.m */; };
+		F063836B1C33DA4F009BEFAA /* FSImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F063836A1C33DA4F009BEFAA /* FSImageModel.m */; };
+		F063836E1C33DBC2009BEFAA /* FSImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F063836D1C33DBC2009BEFAA /* FSImageCell.m */; };
+		F08BF59B1C3CB76700E446D2 /* addImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F08BF5941C3CB76700E446D2 /* addImage.png */; };
+		F08BF59C1C3CB76700E446D2 /* information_delete_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F08BF5951C3CB76700E446D2 /* information_delete_icon.png */; };
+		F08BF59D1C3CB76700E446D2 /* photo_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = F08BF5961C3CB76700E446D2 /* photo_selected.png */; };
+		F08BF59E1C3CB76700E446D2 /* photo_unSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = F08BF5971C3CB76700E446D2 /* photo_unSelected.png */; };
+		F08BF59F1C3CB76700E446D2 /* photoBrowser_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = F08BF5981C3CB76700E446D2 /* photoBrowser_delete.png */; };
+		F08BF5A01C3CB76700E446D2 /* photoBrowser_roate.png in Resources */ = {isa = PBXBuildFile; fileRef = F08BF5991C3CB76700E446D2 /* photoBrowser_roate.png */; };
+		F08BF5A11C3CB76700E446D2 /* public_back_white.png in Resources */ = {isa = PBXBuildFile; fileRef = F08BF59A1C3CB76700E446D2 /* public_back_white.png */; };
+		F0DB20811C3B5C8A00DA8357 /* FSPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DB20801C3B5C8A00DA8357 /* FSPhotoBrowserViewController.m */; };
+		F0DB20841C3B5DE800DA8357 /* FSPhotoGroupController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DB20831C3B5DE800DA8357 /* FSPhotoGroupController.m */; };
+		F0DB20BE1C3B678100DA8357 /* FSPhotoAssetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DB20BD1C3B678100DA8357 /* FSPhotoAssetsController.m */; };
+		F0DB20C11C3B68FA00DA8357 /* FSPhotoAssetsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DB20C01C3B68FA00DA8357 /* FSPhotoAssetsModel.m */; };
+		F0DB20C71C3B6D8400DA8357 /* FSPhotoAssetsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DB20C61C3B6D8400DA8357 /* FSPhotoAssetsCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F06383331C33D41A009BEFAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F06383111C33D41A009BEFAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F06383181C33D41A009BEFAA;
+			remoteInfo = FSImagePickerView;
+		};
+		F063833E1C33D41A009BEFAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F06383111C33D41A009BEFAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F06383181C33D41A009BEFAA;
+			remoteInfo = FSImagePickerView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F06383191C33D41A009BEFAA /* FSImagePickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSImagePickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F063831D1C33D41A009BEFAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F063831F1C33D41A009BEFAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F06383201C33D41A009BEFAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F06383221C33D41A009BEFAA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F06383231C33D41A009BEFAA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F06383261C33D41A009BEFAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F06383281C33D41A009BEFAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F063832B1C33D41A009BEFAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F063832D1C33D41A009BEFAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F06383321C33D41A009BEFAA /* FSImagePickerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSImagePickerViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06383361C33D41A009BEFAA /* FSImagePickerViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSImagePickerViewTests.m; sourceTree = "<group>"; };
+		F06383381C33D41A009BEFAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F063833D1C33D41A009BEFAA /* FSImagePickerViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSImagePickerViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06383411C33D41A009BEFAA /* FSImagePickerViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSImagePickerViewUITests.m; sourceTree = "<group>"; };
+		F06383431C33D41A009BEFAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F06383541C33D5F4009BEFAA /* FSImagePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSImagePickerView.h; sourceTree = "<group>"; };
+		F06383551C33D5F4009BEFAA /* FSImagePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSImagePickerView.m; sourceTree = "<group>"; };
+		F06383691C33DA4F009BEFAA /* FSImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSImageModel.h; sourceTree = "<group>"; };
+		F063836A1C33DA4F009BEFAA /* FSImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSImageModel.m; sourceTree = "<group>"; };
+		F063836C1C33DBC2009BEFAA /* FSImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSImageCell.h; sourceTree = "<group>"; };
+		F063836D1C33DBC2009BEFAA /* FSImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSImageCell.m; sourceTree = "<group>"; };
+		F08BF5941C3CB76700E446D2 /* addImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addImage.png; path = FSImagePickerView/Images/addImage.png; sourceTree = SOURCE_ROOT; };
+		F08BF5951C3CB76700E446D2 /* information_delete_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = information_delete_icon.png; path = FSImagePickerView/Images/information_delete_icon.png; sourceTree = SOURCE_ROOT; };
+		F08BF5961C3CB76700E446D2 /* photo_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = photo_selected.png; path = FSImagePickerView/Images/photo_selected.png; sourceTree = SOURCE_ROOT; };
+		F08BF5971C3CB76700E446D2 /* photo_unSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = photo_unSelected.png; path = FSImagePickerView/Images/photo_unSelected.png; sourceTree = SOURCE_ROOT; };
+		F08BF5981C3CB76700E446D2 /* photoBrowser_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = photoBrowser_delete.png; path = FSImagePickerView/Images/photoBrowser_delete.png; sourceTree = SOURCE_ROOT; };
+		F08BF5991C3CB76700E446D2 /* photoBrowser_roate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = photoBrowser_roate.png; path = FSImagePickerView/Images/photoBrowser_roate.png; sourceTree = SOURCE_ROOT; };
+		F08BF59A1C3CB76700E446D2 /* public_back_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = public_back_white.png; path = FSImagePickerView/Images/public_back_white.png; sourceTree = SOURCE_ROOT; };
+		F0DB207F1C3B5C8A00DA8357 /* FSPhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPhotoBrowserViewController.h; sourceTree = "<group>"; };
+		F0DB20801C3B5C8A00DA8357 /* FSPhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPhotoBrowserViewController.m; sourceTree = "<group>"; };
+		F0DB20821C3B5DE800DA8357 /* FSPhotoGroupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPhotoGroupController.h; sourceTree = "<group>"; };
+		F0DB20831C3B5DE800DA8357 /* FSPhotoGroupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPhotoGroupController.m; sourceTree = "<group>"; };
+		F0DB20BC1C3B678100DA8357 /* FSPhotoAssetsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPhotoAssetsController.h; sourceTree = "<group>"; };
+		F0DB20BD1C3B678100DA8357 /* FSPhotoAssetsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPhotoAssetsController.m; sourceTree = "<group>"; };
+		F0DB20BF1C3B68FA00DA8357 /* FSPhotoAssetsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPhotoAssetsModel.h; sourceTree = "<group>"; };
+		F0DB20C01C3B68FA00DA8357 /* FSPhotoAssetsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPhotoAssetsModel.m; sourceTree = "<group>"; };
+		F0DB20C51C3B6D8400DA8357 /* FSPhotoAssetsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPhotoAssetsCell.h; sourceTree = "<group>"; };
+		F0DB20C61C3B6D8400DA8357 /* FSPhotoAssetsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPhotoAssetsCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F06383161C33D41A009BEFAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F063832F1C33D41A009BEFAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F063833A1C33D41A009BEFAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F06383101C33D41A009BEFAA = {
+			isa = PBXGroup;
+			children = (
+				F063831B1C33D41A009BEFAA /* FSImagePickerView */,
+				F06383351C33D41A009BEFAA /* FSImagePickerViewTests */,
+				F06383401C33D41A009BEFAA /* FSImagePickerViewUITests */,
+				F063831A1C33D41A009BEFAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F063831A1C33D41A009BEFAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F06383191C33D41A009BEFAA /* FSImagePickerView.app */,
+				F06383321C33D41A009BEFAA /* FSImagePickerViewTests.xctest */,
+				F063833D1C33D41A009BEFAA /* FSImagePickerViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F063831B1C33D41A009BEFAA /* FSImagePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				F06383501C33D544009BEFAA /* FSImagePicker */,
+				F063831F1C33D41A009BEFAA /* AppDelegate.h */,
+				F06383201C33D41A009BEFAA /* AppDelegate.m */,
+				F06383221C33D41A009BEFAA /* ViewController.h */,
+				F06383231C33D41A009BEFAA /* ViewController.m */,
+				F06383251C33D41A009BEFAA /* Main.storyboard */,
+				F06383281C33D41A009BEFAA /* Assets.xcassets */,
+				F063832A1C33D41A009BEFAA /* LaunchScreen.storyboard */,
+				F063832D1C33D41A009BEFAA /* Info.plist */,
+				F063831C1C33D41A009BEFAA /* Supporting Files */,
+			);
+			path = FSImagePickerView;
+			sourceTree = "<group>";
+		};
+		F063831C1C33D41A009BEFAA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F063831D1C33D41A009BEFAA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F06383351C33D41A009BEFAA /* FSImagePickerViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				F06383361C33D41A009BEFAA /* FSImagePickerViewTests.m */,
+				F06383381C33D41A009BEFAA /* Info.plist */,
+			);
+			path = FSImagePickerViewTests;
+			sourceTree = "<group>";
+		};
+		F06383401C33D41A009BEFAA /* FSImagePickerViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F06383411C33D41A009BEFAA /* FSImagePickerViewUITests.m */,
+				F06383431C33D41A009BEFAA /* Info.plist */,
+			);
+			path = FSImagePickerViewUITests;
+			sourceTree = "<group>";
+		};
+		F06383501C33D544009BEFAA /* FSImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				F0DB20D01C3B997800DA8357 /* Images */,
+				F06383541C33D5F4009BEFAA /* FSImagePickerView.h */,
+				F06383551C33D5F4009BEFAA /* FSImagePickerView.m */,
+				F0DB20BC1C3B678100DA8357 /* FSPhotoAssetsController.h */,
+				F0DB20BD1C3B678100DA8357 /* FSPhotoAssetsController.m */,
+				F0DB20BF1C3B68FA00DA8357 /* FSPhotoAssetsModel.h */,
+				F0DB20C01C3B68FA00DA8357 /* FSPhotoAssetsModel.m */,
+				F0DB20C51C3B6D8400DA8357 /* FSPhotoAssetsCell.h */,
+				F0DB20C61C3B6D8400DA8357 /* FSPhotoAssetsCell.m */,
+				F0DB207F1C3B5C8A00DA8357 /* FSPhotoBrowserViewController.h */,
+				F0DB20801C3B5C8A00DA8357 /* FSPhotoBrowserViewController.m */,
+				F0DB20821C3B5DE800DA8357 /* FSPhotoGroupController.h */,
+				F0DB20831C3B5DE800DA8357 /* FSPhotoGroupController.m */,
+				F06383691C33DA4F009BEFAA /* FSImageModel.h */,
+				F063836A1C33DA4F009BEFAA /* FSImageModel.m */,
+				F063836C1C33DBC2009BEFAA /* FSImageCell.h */,
+				F063836D1C33DBC2009BEFAA /* FSImageCell.m */,
+			);
+			path = FSImagePicker;
+			sourceTree = "<group>";
+		};
+		F0DB20D01C3B997800DA8357 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F08BF5941C3CB76700E446D2 /* addImage.png */,
+				F08BF5951C3CB76700E446D2 /* information_delete_icon.png */,
+				F08BF5961C3CB76700E446D2 /* photo_selected.png */,
+				F08BF5971C3CB76700E446D2 /* photo_unSelected.png */,
+				F08BF5981C3CB76700E446D2 /* photoBrowser_delete.png */,
+				F08BF5991C3CB76700E446D2 /* photoBrowser_roate.png */,
+				F08BF59A1C3CB76700E446D2 /* public_back_white.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F06383181C33D41A009BEFAA /* FSImagePickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F06383461C33D41A009BEFAA /* Build configuration list for PBXNativeTarget "FSImagePickerView" */;
+			buildPhases = (
+				F06383151C33D41A009BEFAA /* Sources */,
+				F06383161C33D41A009BEFAA /* Frameworks */,
+				F06383171C33D41A009BEFAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSImagePickerView;
+			productName = FSImagePickerView;
+			productReference = F06383191C33D41A009BEFAA /* FSImagePickerView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F06383311C33D41A009BEFAA /* FSImagePickerViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F06383491C33D41A009BEFAA /* Build configuration list for PBXNativeTarget "FSImagePickerViewTests" */;
+			buildPhases = (
+				F063832E1C33D41A009BEFAA /* Sources */,
+				F063832F1C33D41A009BEFAA /* Frameworks */,
+				F06383301C33D41A009BEFAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F06383341C33D41A009BEFAA /* PBXTargetDependency */,
+			);
+			name = FSImagePickerViewTests;
+			productName = FSImagePickerViewTests;
+			productReference = F06383321C33D41A009BEFAA /* FSImagePickerViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F063833C1C33D41A009BEFAA /* FSImagePickerViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F063834C1C33D41A009BEFAA /* Build configuration list for PBXNativeTarget "FSImagePickerViewUITests" */;
+			buildPhases = (
+				F06383391C33D41A009BEFAA /* Sources */,
+				F063833A1C33D41A009BEFAA /* Frameworks */,
+				F063833B1C33D41A009BEFAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F063833F1C33D41A009BEFAA /* PBXTargetDependency */,
+			);
+			name = FSImagePickerViewUITests;
+			productName = FSImagePickerViewUITests;
+			productReference = F063833D1C33D41A009BEFAA /* FSImagePickerViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F06383111C33D41A009BEFAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "王正一";
+				TargetAttributes = {
+					F06383181C33D41A009BEFAA = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					F06383311C33D41A009BEFAA = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = F06383181C33D41A009BEFAA;
+					};
+					F063833C1C33D41A009BEFAA = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = F06383181C33D41A009BEFAA;
+					};
+				};
+			};
+			buildConfigurationList = F06383141C33D41A009BEFAA /* Build configuration list for PBXProject "FSImagePickerView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F06383101C33D41A009BEFAA;
+			productRefGroup = F063831A1C33D41A009BEFAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F06383181C33D41A009BEFAA /* FSImagePickerView */,
+				F06383311C33D41A009BEFAA /* FSImagePickerViewTests */,
+				F063833C1C33D41A009BEFAA /* FSImagePickerViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F06383171C33D41A009BEFAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F08BF5A01C3CB76700E446D2 /* photoBrowser_roate.png in Resources */,
+				F08BF59C1C3CB76700E446D2 /* information_delete_icon.png in Resources */,
+				F08BF59E1C3CB76700E446D2 /* photo_unSelected.png in Resources */,
+				F08BF5A11C3CB76700E446D2 /* public_back_white.png in Resources */,
+				F08BF59F1C3CB76700E446D2 /* photoBrowser_delete.png in Resources */,
+				F063832C1C33D41A009BEFAA /* LaunchScreen.storyboard in Resources */,
+				F06383291C33D41A009BEFAA /* Assets.xcassets in Resources */,
+				F08BF59D1C3CB76700E446D2 /* photo_selected.png in Resources */,
+				F06383271C33D41A009BEFAA /* Main.storyboard in Resources */,
+				F08BF59B1C3CB76700E446D2 /* addImage.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06383301C33D41A009BEFAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F063833B1C33D41A009BEFAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F06383151C33D41A009BEFAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0DB20841C3B5DE800DA8357 /* FSPhotoGroupController.m in Sources */,
+				F0DB20C11C3B68FA00DA8357 /* FSPhotoAssetsModel.m in Sources */,
+				F063836E1C33DBC2009BEFAA /* FSImageCell.m in Sources */,
+				F063836B1C33DA4F009BEFAA /* FSImageModel.m in Sources */,
+				F0DB20C71C3B6D8400DA8357 /* FSPhotoAssetsCell.m in Sources */,
+				F0DB20811C3B5C8A00DA8357 /* FSPhotoBrowserViewController.m in Sources */,
+				F06383241C33D41A009BEFAA /* ViewController.m in Sources */,
+				F06383561C33D5F4009BEFAA /* FSImagePickerView.m in Sources */,
+				F06383211C33D41A009BEFAA /* AppDelegate.m in Sources */,
+				F063831E1C33D41A009BEFAA /* main.m in Sources */,
+				F0DB20BE1C3B678100DA8357 /* FSPhotoAssetsController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F063832E1C33D41A009BEFAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06383371C33D41A009BEFAA /* FSImagePickerViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06383391C33D41A009BEFAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06383421C33D41A009BEFAA /* FSImagePickerViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F06383341C33D41A009BEFAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F06383181C33D41A009BEFAA /* FSImagePickerView */;
+			targetProxy = F06383331C33D41A009BEFAA /* PBXContainerItemProxy */;
+		};
+		F063833F1C33D41A009BEFAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F06383181C33D41A009BEFAA /* FSImagePickerView */;
+			targetProxy = F063833E1C33D41A009BEFAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F06383251C33D41A009BEFAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F06383261C33D41A009BEFAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F063832A1C33D41A009BEFAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F063832B1C33D41A009BEFAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F06383441C33D41A009BEFAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F06383451C33D41A009BEFAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F06383471C33D41A009BEFAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FSImagePickerView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wzy.com.FSImagePickerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F06383481C33D41A009BEFAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FSImagePickerView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wzy.com.FSImagePickerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F063834A1C33D41A009BEFAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FSImagePickerViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wzy.com.FSImagePickerViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FSImagePickerView.app/FSImagePickerView";
+			};
+			name = Debug;
+		};
+		F063834B1C33D41A009BEFAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FSImagePickerViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wzy.com.FSImagePickerViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FSImagePickerView.app/FSImagePickerView";
+			};
+			name = Release;
+		};
+		F063834D1C33D41A009BEFAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FSImagePickerViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wzy.com.FSImagePickerViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FSImagePickerView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F063834E1C33D41A009BEFAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FSImagePickerViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wzy.com.FSImagePickerViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FSImagePickerView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F06383141C33D41A009BEFAA /* Build configuration list for PBXProject "FSImagePickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F06383441C33D41A009BEFAA /* Debug */,
+				F06383451C33D41A009BEFAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F06383461C33D41A009BEFAA /* Build configuration list for PBXNativeTarget "FSImagePickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F06383471C33D41A009BEFAA /* Debug */,
+				F06383481C33D41A009BEFAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F06383491C33D41A009BEFAA /* Build configuration list for PBXNativeTarget "FSImagePickerViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F063834A1C33D41A009BEFAA /* Debug */,
+				F063834B1C33D41A009BEFAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F063834C1C33D41A009BEFAA /* Build configuration list for PBXNativeTarget "FSImagePickerViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F063834D1C33D41A009BEFAA /* Debug */,
+				F063834E1C33D41A009BEFAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F06383111C33D41A009BEFAA /* Project object */;
+}

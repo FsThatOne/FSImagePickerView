@@ -6,8 +6,10 @@
 //  Copyright © 2016 王正一. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface FSPhotoBrowserViewController : NSObject
-
+typedef void (^editedPhoto)(NSMutableArray *imageArray,BOOL isChanged);
+@interface FSPhotoBrowserViewController : UIViewController
+@property (nonatomic, strong) NSMutableArray *imageArray;
+@property (nonatomic, strong) editedPhoto editedCallBack;
 @end

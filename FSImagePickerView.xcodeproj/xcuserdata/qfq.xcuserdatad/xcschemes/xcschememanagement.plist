@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>FSImagePickerView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>daasd.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>F06383181C33D41A009BEFAA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F06383311C33D41A009BEFAA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F063833C1C33D41A009BEFAA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F0DB20881C3B5FA400DA8357</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F0DB20A01C3B5FA500DA8357</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F0DB20AB1C3B5FA500DA8357</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

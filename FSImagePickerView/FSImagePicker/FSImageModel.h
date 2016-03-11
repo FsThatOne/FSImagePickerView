@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FSImageModel : NSObject
+@interface FSImageModel : NSObject<NSCoding>
+@property (nonatomic, copy) NSString *pid;
 
+@property (nonatomic, copy) NSString *url;
+
+@property (nonatomic, strong) NSData *data;
+
+/**
+ *  相册图片的本地地址
+ */
+@property (nonatomic, strong) NSURL *assetUrl;
 @end

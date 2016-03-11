@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <AssetsLibrary/ALAsset.h>
+#import "FSPhotoAssetsModel.h"
 @interface FSPhotoAssetsCell : UICollectionViewCell
+@property (nonatomic, strong) ALAsset *asset;
 
+@property (nonatomic, strong) FSPhotoAssetsModel *model;
+
+@property (nonatomic, weak) UIImageView *indicator;
 @end

@@ -7,9 +7,13 @@
 //
 
 #import "FSPhotoGroupController.h"
+#import <AssetsLibrary/AssetsLibrary.h>
+#import "FSPhotoAssetsController.h"
 
-@interface FSPhotoGroupController ()
-
+@interface FSPhotoGroupController ()<UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, strong) NSMutableArray *data;
+@property (nonatomic, weak) UITableView *tableView;
+@property (nonatomic, strong) ALAssetsLibrary *library;
 @end
 
 @implementation FSPhotoGroupController
@@ -17,82 +21,94 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
-}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    [self p_setUI];
+    [self p_setData];
     
-    // Configure the cell...
+}
+
+- (void)p_setUI
+{
+    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    tableView.rowHeight = 80;
+    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    [self.view addSubview:tableView];
+    self.tableView = tableView;
+    
+    //导航栏配置
+    self.title = @"我的相册";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(dismiss)];
+    self.navigationController.navigationBar.barTintColor = [UIColor blackColor];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{
+                                                                      NSForegroundColorAttributeName:[UIColor whiteColor]}];
+}
+
+- (void)dismiss
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+#pragma mark - data
+- (void)p_setData
+{
+    self.data = [NSMutableArray array];
+    ALAssetsLibrary *libray = [[ALAssetsLibrary alloc] init];
+    self.library = libray;
+    [libray enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
+        if (group) {
+            [self.data addObject:group];
+        } else {
+            [self.tableView reloadData];
+        }
+        
+    } failureBlock:^(NSError *error) {
+        
+    }];
+}
+#pragma mark - tableView
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.data.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ALAssetsGroup *group = self.data[indexPath.row];
+    static NSString *ID = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+    }
+    cell.imageView.image = [UIImage imageWithCGImage:group.posterImage];
+    
+    cell.textLabel.text = [group valueForProperty:ALAssetsGroupPropertyName];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%ld", (long)[group numberOfAssets]];
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ALAssetsGroup *group = self.data[indexPath.row];
+    NSMutableArray *photos = [NSMutableArray array];
+    [group enumerateAssetsUsingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
+        if (result) {
+            [photos addObject:result];
+        } else {
+            FSPhotoAssetsController *vc = [[FSPhotoAssetsController alloc] init];
+            vc.groupVc = self;
+            vc.data = photos;
+            vc.title = [group valueForProperty:ALAssetsGroupPropertyName];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        
+    }];
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

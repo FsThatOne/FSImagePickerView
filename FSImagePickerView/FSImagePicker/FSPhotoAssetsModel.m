@@ -9,5 +9,11 @@
 #import "FSPhotoAssetsModel.h"
 
 @implementation FSPhotoAssetsModel
-
++ (instancetype)photoAssetsModelWithDict:(NSDictionary *)dict
+{
+    FSPhotoAssetsModel *model = [[self alloc] init];
+    model.selected = [dict[@"selected"] boolValue];
+    model.asset = dict[@"asset"];
+    return model;
+}
 @end
